@@ -1,0 +1,196 @@
+@font-face {
+    font-family:'Tajawal' ;
+    src: url(fonts/Arabic/Tajawal-Regular.ttf);
+}
+body{
+    background-color: rgb(203, 211, 162);
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    transform: 0.5s;
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #333 #f1f1f1;
+    font-family: 'Tajawal';
+    font-weight: bold !important;
+}
+
+/*-----------------------------------( Tous les button )-----------------------------------*/
+button{
+    border: none;
+    border-radius: 50px;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover{
+    color: rgb(139, 177, 106);
+}
+/*------------------------------( La barre en haut des button )---------------------------*/
+.barre{
+    display: flex; gap: 1px;
+    width: 95%;
+    justify-content: center;
+}
+.barre button{
+    width: 100%;
+    padding: 3%;
+    font-size: clamp(0.7rem,1vw,1.5rem);
+    border-radius: 0% !important;
+}
+#mouvements_num{
+    cursor:auto;
+}
+#mouvements_num:hover, #counter:hover{
+    color: #fff;
+}
+#counter{
+    text-align: center;
+    cursor:auto;
+}
+#pause{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 23%;
+    cursor:no-drop;
+}
+#pause img{
+    position: absolute;
+    width: 60%;
+    opacity: 50%;
+}
+/*------*/
+
+#game_type{
+    position: absolute;
+    margin: 100px 0;
+    width: 60%;
+    z-index: 2000;
+}
+#game_type button{
+    background-color: rgb(203, 211, 162);
+    color: #444;
+    margin: 5px 0;
+    width: 100%;
+    font-size: clamp(1rem,1.5vw,4rem);
+}
+#images_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    overflow:auto;
+    margin: 10px 0;
+    background-color: rgba(203, 211, 162, 0.16);
+    display: none;
+    border-radius: 25px;
+}
+#images_container img{
+    width: 200px; height: 200px;
+    margin: 2%;
+    cursor: pointer;
+    border-radius: 25px;
+}
+#cach_btn{
+    display: none;
+    margin-left: 96% !important;
+    justify-content: center;
+    align-items: center;
+    width: 4% !important; aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-size: clamp(1rem,1.5vw,1.5rem) !important;
+    background-color: rgb(163, 26, 26) !important;
+    color: #fff !important;
+}
+#game_type button:hover{
+    color: rgb(109, 135, 87);
+}
+#dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0%;
+    width: 100%; height: 100%;
+    z-index: 1000;
+    background:#000000b8;
+}
+#dark img{
+    height: 20%;
+    cursor: pointer;
+    display: none;
+}
+/*===========================================================================*/
+#game_container{
+    position: relative;
+    margin: 20px 15px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:650px){
+    #game_container{
+        width: 80%;
+        margin: 15% 0%;
+    }
+}
+.puzzle {
+    position: absolute;
+    top:60px;
+    margin: 1px 0;
+    display: flex; gap: 0.9%;
+    flex-wrap: wrap;
+    width:95%;
+    aspect-ratio: 1/1;
+}
+
+.puzzle button{
+    width: 24.3%; height: 24.3%;
+    font-size: clamp(1.5rem,3.5vw,6rem);
+    cursor: pointer;
+    color: rgb(203, 211, 162);
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #111;
+    border-radius: 0%;
+    padding: 0%;
+    transition: 0.5s;
+    -webkit-tap-highlight-color: transparent;
+}
+.puzzle button img{
+    width: 100%;
+}
+#result{
+    display: none;
+    place-items: center;
+    position: absolute;
+    bottom: 5%; left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: clamp(1rem,1.5vw,2rem);
+    text-align: center;
+    box-shadow: -4px 4px 0 #fff;
+    animation: resultat 0.5s ease-in-out;
+    width: 25%;
+}
+#play_again_btn{
+    width:100%;
+    font-size: clamp(0.5rem,1vw,2rem);
+    margin-top: 10px;
+}
+@keyframes resultat {
+    from{
+        transform: translate(-50%,-50%);
+    }
+    to{
+        transform: translateY(50%,50%);
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Puzzle</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="puzle.css">
+</head>
+<body>
+    <nav class="nav_conteneur"></nav>
+    
+    <div id="dark"><img id="play" src="play.png"></div>
+    <section id="game_container">
+        <div class="barre">
+            <button id="reset_btn">البدأ من جديد</button>
+            <button id="mouvements_num"><span id="mouvements_counter">0</span> : عدد الحركات</button>
+            <button id="counter"><span id="counter_num">0</span> : المؤقت</button>
+            <button id="pause"><img id="pause_img" src="pause.png" alt=""></button>
+        </div>
+        <div class="puzzle"></div>
+    </section>
+
+    <div id="result"></div>
+
+    <div id="game_type">
+        <button id='cach_btn'>x</button>
+        <button id="classic">كلاسيكي</button>
+        <button id="images">صورة</button>
+        <div id="images_container"></div>
+    </div>
+</body>
+<script src="a.js"></script>
+</html>
