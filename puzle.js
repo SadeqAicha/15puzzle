@@ -97,7 +97,7 @@ if (case_class.length===0){
     if(case_class[i].alt != `case${i}`) return;
 }}
     victory_audio.play();
-    result.innerHTML=`!! أحسنت <a href="puzle.html" ><button id='play_again_btn'>إلعب مجددا</button></a>`;
+    result.innerHTML=`!! أحسنت <a href="index.html" ><button id='play_again_btn'>إلعب مجددا</button></a>`;
     puzzle.classList.add('puzzle_result');
     result.style.display='grid';
     for(let i=0 ;i<Mylist.length;i++)
@@ -113,4 +113,5 @@ function Randnum(max,count){
         }
     }
     return listRand;
+
 }
