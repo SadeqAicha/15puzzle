@@ -174,7 +174,7 @@ if (case_class.length===0){
     pause.style.cursor='no-drop';
     clearInterval(intervalId);
     victory_audio.play();
-    result.innerHTML=`!! أحسنت <a href="puzle.html" ><button id='play_again_btn'>إلعب مجددا</button></a>`;
+    result.innerHTML=`!! أحسنت <a href="index.html" ><button id='play_again_btn'>إلعب مجددا</button></a>`;
     result.style.display='grid';
     for(let i=0 ;i<Mylist.length;i++)
         puzzle_case[i].disabled=true;
@@ -190,4 +190,5 @@ function Randnum(max,count){
         }
     }
     return listRand;
+
 }
