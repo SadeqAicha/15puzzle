@@ -38,7 +38,7 @@ button:hover{
 .barre button{
     width: 100%;
     padding: 3%;
-    font-size: clamp(0.7rem,1vw,1.5rem);
+    font-size: clamp(0.6rem,1vw,1.5rem);
     border-radius: 0% !important;
 }
 #mouvements_num{
@@ -193,4 +193,5 @@ button:hover{
     to{
         transform: translateY(50%,50%);
     }
+
 }
